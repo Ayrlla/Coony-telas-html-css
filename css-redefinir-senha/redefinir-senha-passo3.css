@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #414141;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* TOPO (seta + título centralizado) */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Botão com a seta em imagem, tamanho controlado */
+.back-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn img {
+  width: 100%;
+  height: auto;
+}
+
+/* Título centralizado visualmente */
+.screen-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+}
+
+/* Espaçador à direita para balancear com o botão da esquerda */
+.top-bar-spacer {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/* ---------- resto do seu CSS permanece igual ---------- */
+
+.content {
+  flex: 1;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.password-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #505050;
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.password-input input:focus {
+  border-color: #f58149;
+  box-shadow: 0 0 0 2px rgba(245, 129, 73, 0.2);
+}
+
+.toggle-visibility {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #f58149;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 350px;
+  height: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #f58149;
+  width: 100%;
+}
+
+.step-indicator {
+  width: 100%;
+  max-width: 350px;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #707070;
+  margin-bottom: 1rem;
+}
+
+.primary-btn {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.75rem;
+  background-color: #f58149;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #e06e38;
+}
+
+@media (min-width: 768px) {
+  .form-group label {
+    font-size: 1.1rem;
+  }
+  .password-input input {
+    font-size: 1.1rem;
+    padding: 0.85rem 3rem 0.85rem 0.85rem;
+  }
+  .primary-btn {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}

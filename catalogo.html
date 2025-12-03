@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Serviços</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css-catalogo/catalogo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Barra superior com botão de voltar, busca e home -->
+      <header class="top-bar">
+        <button class="icon-btn back-btn" aria-label="Voltar">
+          <img src="imagens-catalogo/seta-esquerda.png" alt="Voltar" />
+        </button>
+        <div class="search-container">
+          <img
+            class="search-icon"
+            src="imagens-catalogo/lupa.png"
+            alt="Buscar"
+          />
+          <input
+            type="text"
+            placeholder="Buscar empresa ou profissional..."
+            aria-label="Campo de busca"
+          />
+        </div>
+        <button class="icon-btn home-btn" aria-label="Ir para a home">
+          <img src="imagens-catalogo/casa.png" alt="Home" />
+        </button>
+      </header>
+
+      <!-- Categorias como chips -->
+      <nav class="categories">
+        <button class="chip active">Todos</button>
+        <button class="chip">Academias</button>
+        <button class="chip">Nutricionistas</button>
+        <button class="chip">Personal Trainers</button>
+      </nav>
+
+      <!-- Lista de cards de serviços -->
+      <main class="cards-container">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-left">
+            <img
+              class="service-icon"
+              src="imagens-catalogo/do-utilizador.png"
+              alt="Academia"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Vitafit Academia</h3>
+            <p class="card-subtitle">Academia</p>
+            <p class="card-location">Recife, PE</p>
+          </div>
+          <div class="card-right">
+            <button class="ver-mais-btn">Ver mais</button>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-left">
+            <img
+              class="service-icon"
+              src="imagens-catalogo/do-utilizador.png"
+              alt="Nutricionista"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Dr. Renata Farias</h3>
+            <p class="card-subtitle">Nutricionista</p>
+            <p class="card-location">Recife, PE</p>
+          </div>
+          <div class="card-right">
+            <button class="ver-mais-btn">Ver mais</button>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-left">
+            <img
+              class="service-icon"
+              src="imagens-catalogo/do-utilizador.png"
+              alt="Personal Trainer"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Power Training</h3>
+            <p class="card-subtitle">Personal Trainer</p>
+            <p class="card-location">Recife, PE</p>
+          </div>
+          <div class="card-right">
+            <button class="ver-mais-btn">Ver mais</button>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-left">
+            <img
+              class="service-icon"
+              src="imagens-catalogo/do-utilizador.png"
+              alt="Personal Trainer"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ricardo Mathias</h3>
+            <p class="card-subtitle">Personal Trainer</p>
+            <p class="card-location">Recife, PE</p>
+          </div>
+          <div class="card-right">
+            <button class="ver-mais-btn">Ver mais</button>
+          </div>
+        </article>
+      </main>
+
+      <!-- Paginação -->
+      <div class="pagination">
+        <button class="page-nav" aria-label="Página anterior">
+          <img src="imagens-catalogo/seta-esquerda2.png" alt="Anterior" />
+        </button>
+        <div class="page-numbers">
+          <button class="page-number active">1</button>
+          <button class="page-number">2</button>
+          <button class="page-number">3</button>
+          <span class="ellipsis">…</span>
+          <button class="page-number">99</button>
+        </div>
+        <button class="page-nav" aria-label="Próxima página">
+          <img src="imagens-catalogo/seta-direita1.png" alt="Próximo" />
+        </button>
+      </div>
+
+      <!-- Barra de navegação inferior com ícone e rótulo -->
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item active" aria-label="Início">
+          <img src="imagens-catalogo/casa.png" alt="Início" />
+          <span class="nav-label">Início</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Favoritos">
+          <img src="imagens-catalogo/corre.png" alt="Favoritos" />
+          <span class="nav-label">Corridas</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Adicionar">
+          <img src="imagens-catalogo/alem-disso-positivo-adicionar-simbolo-matematico.png" alt="Adicionar" />
+          <span class="nav-label">Adicionar</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Notificações">
+          <img src="imagens-catalogo/bate-papo-bolha (1).png" alt="Notificações" />
+          <span class="nav-label">Chat</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Perfil">
+          <img src="imagens-catalogo/do-utilizador.png" alt="Perfil" />
+          <span class="nav-label">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

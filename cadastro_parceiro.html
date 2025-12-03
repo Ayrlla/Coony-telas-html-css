@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Parceiro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css-cadastro-parceiro/cadastro_parceiro.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Top navigation bar with back arrow and home icon -->
+      <header class="top-bar">
+        <button class="icon-btn back-btn" aria-label="Voltar">
+          <img src="imagens-cadastro-parceiro/arrow-left.png" alt="Voltar" />
+        </button>
+        <div class="title-wrapper">
+          <h1 class="page-title">Cadastrar Parceiro</h1>
+          <p class="page-subtitle">Empresas e profissionais</p>
+        </div>
+        <button class="icon-btn home-btn" aria-label="Início">
+          <img src="imagens-cadastro-parceiro/home.png" alt="Home" />
+        </button>
+      </header>
+
+      <!-- Form section -->
+      <main class="form-container">
+        <h2 class="section-heading">Tipo de parceiro</h2>
+        <!-- Tipo de parceiro select -->
+        <div class="field select-field">
+          <select>
+            <option value="empresa">Empresa</option>
+            <option value="profissional">Profissional</option>
+          </select>
+          <img
+            class="select-arrow"
+            src="imagens-cadastro-parceiro/dropdown-arrow.png"
+            alt="Abrir lista"
+          />
+        </div>
+        <!-- Nome / Razão social -->
+        <div class="field">
+          <input
+            type="text"
+            placeholder="Nome / Razão social"
+            aria-label="Nome ou Razão social"
+          />
+        </div>
+        <!-- Categoria -->
+        <div class="field select-field">
+          <select>
+            <option value="">Categoria</option>
+            <option value="academia">Academia</option>
+            <option value="nutricionista">Nutricionista</option>
+            <option value="personal">Personal Trainer</option>
+          </select>
+          <img
+            class="select-arrow"
+            src="imagens-cadastro-parceiro/dropdown-arrow.png"
+            alt="Abrir lista"
+          />
+        </div>
+        <!-- CNPJ / CPF -->
+        <div class="field">
+          <input type="text" placeholder="CNPJ / CPF" aria-label="CNPJ ou CPF" />
+        </div>
+        <!-- Website / Instagram -->
+        <div class="field">
+          <input
+            type="text"
+            placeholder="Website / Instagram"
+            aria-label="Website ou Instagram"
+          />
+        </div>
+        <!-- Serviços ofertados -->
+        <h2 class="section-heading">Serviços ofertados</h2>
+        <div class="field services-field">
+          <textarea
+            rows="2"
+            placeholder="Descreva os serviços ofertados"
+            aria-label="Serviços ofertados"
+          ></textarea>
+        </div>
+        <!-- Tags de serviços selecionados -->
+        <div class="tags-container">
+          <span class="tag tag-primary">Personal</span>
+          <span class="tag tag-secondary">Nutricionista</span>
+          <span class="tag tag-primary">Avaliação gratuita</span>
+          <span class="tag tag-outline">Atleta</span>
+        </div>
+        <!-- Upload area -->
+        <div class="upload-area">
+          <img
+            class="upload-icon"
+            src="imagens-cadastro-parceiro/upload.png"
+            alt="Enviar arquivo"
+          />
+          <p>Enviar logo / foto de perfil</p>
+        </div>
+        <!-- Submit button -->
+        <button class="primary-btn" type="submit">Cadastrar</button>
+      </main>
+
+      <!-- Bottom navigation bar -->
+      <nav class="bottom-nav">
+        <a href="#" class="nav-item active" aria-label="Início">
+          <img src="imagens-cadastro-parceiro/home.png" alt="Início" />
+          <span class="nav-label">Início</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Favoritos">
+          <img src="imagens-cadastro-parceiro/star.png" alt="Favoritos" />
+          <span class="nav-label">Favoritos</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Adicionar">
+          <img src="imagens-cadastro-parceiro/plus.png" alt="Adicionar" />
+          <span class="nav-label">Adicionar</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Notificações">
+          <img
+            src="imagens-cadastro-parceiro/bell.png"
+            alt="Notificações"
+          />
+          <span class="nav-label">Notificações</span>
+        </a>
+        <a href="#" class="nav-item" aria-label="Perfil">
+          <img src="imagens-cadastro-parceiro/user.png" alt="Perfil" />
+          <span class="nav-label">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

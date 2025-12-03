@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redefinir senha – Código de verificação</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/redefinir-senha-passo2.css" />
+</head>
+
+<body>
+    <header class="top-bar">
+  <!-- Botão de retorno com a imagem da seta -->
+  <button class="back-btn" aria-label="Voltar">
+    <img
+      src="imagens-redefinirSenha/seta-esquerda.png"
+      alt="Voltar"
+    />
+  </button>
+        <h1 class="screen-title">Esqueceu sua senha?</h1>
+    </header>
+
+    <main class="content">
+
+    <!-- Ilustração no topo -->
+    <div class="illustration">
+        <img 
+            src="imagens-redefinirSenha/Messages-rafiki (1).png"
+            alt="Ilustração de verificação de código"
+        />
+    </div>
+
+    <main class="content">
+        <h2 class="subtitle">Insira o código abaixo:</h2>
+        <p class="instruction">
+            Por favor, insira o código que enviamos por e-mail
+        </p>
+
+        <!-- Caixa de código com 4 inputs -->
+        <form class="code-form" action="#" method="get">
+            <div class="code-inputs">
+                <input type="text" inputmode="numeric" maxlength="1" required />
+                <input type="text" inputmode="numeric" maxlength="1" required />
+                <input type="text" inputmode="numeric" maxlength="1" required />
+                <input type="text" inputmode="numeric" maxlength="1" required />
+            </div>
+
+            <div class="resend-wrapper">
+                <span>Não recebeu o código? </span>
+                <a href="#" class="resend-link">Reenviar código</a>
+            </div>
+
+            <!-- Barra de progresso -->
+            <div class="progress-bar" aria-label="Barra de progresso">
+                <div class="progress" style="width: 50%"></div>
+            </div>
+
+            <div class="step-indicator">1 de 2</div>
+
+            <button type="submit" class="primary-btn">Verificar</button>
+        </form>
+    </main>
+</body>
+</html>

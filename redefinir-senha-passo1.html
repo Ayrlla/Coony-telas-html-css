@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redefinir senha – Escolher envio</title>
+    <!-- Importa a fonte Inter para uma aparência moderna -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos específicos desta tela -->
+    <link rel="stylesheet" href="css-redefinir-senha/redefinir-senha-passo1.css" />
+  </head>
+  <body>
+   <header class="top-bar">
+  <!-- Botão de retorno com a imagem da seta -->
+  <button class="back-btn" aria-label="Voltar">
+    <img
+      src="imagens-redefinirSenha/seta-esquerda.png"
+      alt="Voltar"
+    />
+  </button>
+
+  <h1 class="screen-title">Esqueceu sua senha?</h1>
+
+  <!-- Espaçador para equilibrar o layout (mesma largura do botão) -->
+  <span class="top-bar-spacer"></span>
+</header>
+    <main class="content">
+      <!-- Ilustração central representando o recadastro de senha -->
+      <div class="illustration">
+        <img
+          src="imagens-redefinirSenha/Mobile login-pana.png"
+          alt="Ilustração de redefinição de senha"
+        />
+      </div>
+      <h2 class="subtitle">
+        Onde você gostaria de receber<br />o seu código de verificação?
+      </h2>
+      <!-- Formulário de seleção de meio de verificação -->
+      <form class="options-form" action="#" method="get">
+        <label class="option-card">
+          <input type="radio" name="delivery" value="sms" checked />
+          <div class="option-content">
+            <!-- Ícone de SMS -->
+            <img
+              src="imagens-redefinirSenha/conversando (1).png"
+              alt="Ícone de SMS"
+            />
+            <div class="option-text">
+              <span class="option-title">via SMS</span>
+              <span class="option-detail">+55 (81) 8798-000</span>
+            </div>
+          </div>
+        </label>
+        <label class="option-card">
+          <input type="radio" name="delivery" value="email" />
+          <div class="option-content">
+            <!-- Ícone de e‑mail -->
+            <img
+              src="imagens-redefinirSenha/e-mail.png"
+              alt="Ícone de E-mail"
+            />
+            <div class="option-text">
+              <span class="option-title">via E-mail</span>
+              <span class="option-detail">LauraRegina89***@email.com</span>
+            </div>
+          </div>
+        </label>
+        <button type="submit" class="primary-btn">Próximo</button>
+      </form>
+    </main>
+  </body>
+</html>

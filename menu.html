@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Lateral</title>
+    <!-- Fonte principal -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos específicos do menu -->
+    <link rel="stylesheet" href="css-menu/menu.css" />
+  </head>
+  <body>
+    <div class="menu-container">
+      <!-- Faixa superior laranja -->
+      <div class="menu-header"></div>
+      <!-- Cartão principal -->
+      <div class="menu-card">
+        <!-- Perfil do usuário -->
+        <div class="profile">
+          <img
+            class="avatar"
+            src="imagens-menu/do-utilizador.png"
+            alt="Avatar do usuário"
+          />
+          <div class="profile-info">
+            <h2 class="name">Maria Eduarda</h2>
+            <p class="username">@MariEdu</p>
+          </div>
+        </div>
+        <hr />
+        <!-- Seção de configurações -->
+        <div class="section">
+          <span class="section-title">Configurações</span>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="item-text">Editar perfil</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Trocar senha</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Eventos favoritos</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Criar evento</span>
+              <img class="item-icon" src="imagens-menu/mais.png" alt="Adicionar" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Meus eventos</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+          </ul>
+          <!-- Linha de notificação -->
+          <div class="toggle-item">
+            <span class="item-text">Notificações</span>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggle-item">
+            <span class="item-text">Modo noturno</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <!-- Seção de mais informações -->
+        <div class="section">
+          <span class="section-title">Mais informações</span>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <span class="item-text">Sobre nós</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Central de Ajuda</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+            <li class="menu-item">
+              <span class="item-text">Termos e Condições</span>
+              <img class="item-icon" src="imagens-menu/seta-direita.png" alt="Abrir" />
+            </li>
+          </ul>
+        </div>
+        <!-- Linha de sair -->
+        <div class="logout">
+          <img
+            class="logout-icon"
+            src="imagens-menu/sair.png"
+            alt="Sair"
+          />
+          <span class="logout-text">Sair</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

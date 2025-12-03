@@ -1,0 +1,228 @@
+/*
+ * Estilos para o menu lateral de configurações.
+ * Inspirado no design fornecido: card branco sobreposto a um topo laranja com itens listados
+ * e controles de alternância personalizados.
+ */
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #414141;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container geral do menu */
+.menu-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Cabeçalho laranja do menu */
+.menu-header {
+  width: 100%;
+  height: 160px;
+  background-color: #f58149;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* Cartão principal com conteúdo */
+.menu-card {
+  position: relative;
+  top: -80px; /* sobe o cartão para sobrepor o cabeçalho */
+  margin: 0 1rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+/* Perfil do usuário */
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.profile-info .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.profile-info .username {
+  font-size: 0.85rem;
+  color: #888888;
+}
+
+/* Divisor horizontal sutil */
+.menu-card hr {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  margin: 0;
+}
+
+/* Seção com título e lista */
+.section {
+  padding: 1rem;
+}
+
+.section-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #aaaaaa;
+  margin-bottom: 0.5rem;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.item-text {
+  color: #414141;
+}
+
+.item-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Itens de alternância (switches) */
+.toggle-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.95rem;
+  color: #414141;
+}
+
+/* Componente toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0e0e0;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #f58149;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* Última seção (logout) */
+.logout {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid #f5f5f5;
+  color: #f58149;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.logout-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    max-width: 480px;
+  }
+  .menu-header {
+    height: 180px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .menu-card {
+    top: -90px;
+    border-radius: 24px;
+  }
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .menu-item,
+  .toggle-item,
+  .logout {
+    font-size: 1rem;
+  }
+  .item-icon {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,213 @@
+/*
+ * Estilos para a tela 1 do fluxo de redefinição de senha (escolha do meio de envio).
+ * Ajustes foram feitos para evitar que as imagens fiquem desproporcionais em telas maiores.
+ */
+
+/* Reset básico e configurações globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: #414141;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Top bar com seta de voltar e título */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Botão com seta à esquerda */
+.back-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  width: 1.75rem;   /* mesma largura do espaçador à direita */
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn img {
+  width: 100%;
+  height: auto;
+}
+
+/* Título centralizado visualmente */
+.screen-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+}
+
+/* Espaçador à direita para manter o título central */
+.top-bar-spacer {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+
+/* Define tamanho do ícone no cabeçalho */
+.header-icon {
+  width: 1.75rem; /* aproximadamente 28px */
+  height: auto;
+}
+
+/* Conteúdo central */
+.content {
+  flex: 1;
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ilustração no topo: limita o tamanho da imagem */
+.illustration {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.illustration img {
+  width: 70%;
+  max-width: 350px; /* valor seguro para desktops */
+  height: auto;
+}
+
+/* Subtítulo com pergunta */
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #505050;
+}
+
+/* Formulário de opções */
+.options-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Cartão de opção (SMS/E-mail) */
+.option-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Esconde o input do tipo radio */
+.option-card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Realça a opção selecionada */
+.option-card input:checked + .option-content {
+  border-color: #f58149;
+  background-color: #fff4ee;
+}
+
+/* Conteúdo da opção */
+.option-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 0.5rem;
+  transition: inherit;
+}
+
+/* Ajuste para qualquer imagem dentro das opções (ícones) */
+.option-content img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+  object-fit: contain;
+}
+
+/* Estilos do texto na opção */
+.option-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.option-detail {
+  font-size: 0.9rem;
+  color: #707070;
+}
+
+/* Botão primário */
+.primary-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 350px;
+  padding: 0.75rem;
+  background-color: #f58149;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #e06e38;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding-top: 2rem;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .illustration img {
+    max-width: 400px;
+  }
+  .primary-btn {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}

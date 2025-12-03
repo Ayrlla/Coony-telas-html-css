@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redefinir senha – Nova senha</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/redefinir-senha-passo3.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <!-- Botão de retorno com a imagem da seta -->
+      <button class="back-btn" aria-label="Voltar">
+        <img
+          src="imagens-redefinirSenha/seta-esquerda.png"
+          alt="Voltar"
+        />
+      </button>
+
+      <h1 class="screen-title">Esqueceu sua senha?</h1>
+
+      <!-- Espaçador para manter o título centralizado -->
+      <span class="top-bar-spacer"></span>
+    </header>
+
+    <main class="content">
+      <form class="password-form" action="#" method="post">
+        <div class="form-group">
+          <label for="novaSenha">Nova Senha:</label>
+          <div class="password-input">
+            <input
+              type="password"
+              id="novaSenha"
+              name="novaSenha"
+              placeholder="Digite a nova senha"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-visibility"
+              aria-label="Mostrar/ocultar senha"
+            >
+              <!-- aqui vai o ícone do olho se quiser -->
+            </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmarSenha">Confirmar Senha:</label>
+          <div class="password-input">
+            <input
+              type="password"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              placeholder="Confirme a nova senha"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-visibility"
+              aria-label="Mostrar/ocultar senha"
+            >
+              <!-- ícone do olho -->
+            </button>
+          </div>
+        </div>
+
+        <!-- Barra de progresso indicando passo 2 de 2 -->
+        <div class="progress-bar">
+          <div class="progress" style="width: 100%"></div>
+        </div>
+        <div class="step-indicator">2 de 2</div>
+
+        <button type="submit" class="primary-btn">Salvar nova senha</button>
+      </form>
+    </main>
+  </body>
+</html>
